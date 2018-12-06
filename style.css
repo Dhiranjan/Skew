@@ -47,29 +47,24 @@ p {
 
 /************Banner**********/
 #banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0px;
+    padding: 30px 0px 600px;
     background-color: #ed213a;
     width: 100%;
-    height: 100vh;
     transform: skew(0deg, -7deg) translateY(-120px);
 }
 
 .banner-text {
+    position: absolute;
+    bottom: 30%;
     transform: skew(0deg, 7deg) translateY(120px);
 }
 
 /************About us********/
 #about {
-    padding: 30px 0px;
+    padding: 30px 0px 200px;
     background-color: #11998e;
     width: 100%;
-    height: 100vh;
     transform: skew(0deg, -7deg) translateY(-120px);
-    z-index: 1;
-
 }
 
 #about h1 {
@@ -107,10 +102,6 @@ p {
     padding-bottom: 50px;
     background-color: #444b53;
     width: 100%;
-    height: 120vh;
-    /* transform: skew(0deg, 5deg) translateY(-220px); */
-    z-index: -44;
-
 }
 
 #services h1 {
@@ -120,11 +111,10 @@ p {
 
 #services h1::after {
     content: '';
-    border-bottom: 1px solid coral;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
     width: 23%;
     display: block;
     margin: auto;
-    
 }
 
 .btn{
@@ -139,6 +129,7 @@ p {
     width: auto;
     height: auto;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .service-box {
@@ -168,7 +159,171 @@ p {
      font-size: 7em;
  }
 
- 
+ /****************Testimonials***********/
+#testimonials {
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #3061ae;
+    width: 100%;
+}
+
+#testimonials h1 {
+    border: none;
+}
+
+#testimonials h1::after{
+    content: '';
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+    width: 45%;
+    display: block;
+}
+
+#testimonials .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#testimonials .col-md-3{
+    margin-top: 80px;
+    padding-top: 40px 0px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+#testimonials .col-md-3:hover {
+    background-color: #f16272;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.testimony-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 90px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testimony-body p{
+    color: #333;
+    padding: 70px 5px 0px;
+    text-align: center;
+
+}
+
+.testimony-body p::before {
+    content: open-quote;
+    color: #007bff;
+    font-size: 3em;
+    position: absolute;
+    top: 55px;
+    left: 40px;
+}
+
+.testimony-body p::after {
+    content: close-quote;
+    color: #007bff;
+    font-size: 3em;
+    position: absolute;
+    bottom: 55px;
+    
+}
+
+.testimony-body h5 {
+    text-align: center;
+    padding: 15px 0px 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.testimony-body h5 span {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    opacity: 0;
+}
+
+.social ul li {
+    list-style: none;
+    float: left;
+    padding-right: 25px;
+}
+
+.social .fab {
+    font-size: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #007bff;
+    height: 40px;
+    width: 40px
+}
+
+.social i{
+    text-align: center;
+    padding: 5px;
+}
+
+#testimonials .col-md-3:hover .social{
+    opacity: 1;
+}
+
+/**************Company***********/
+
+#company{
+    padding: 30px;
+    background-color: #d3dfdf;
+}
+
+#company ul li {
+    list-style: none;
+    float: left;
+    padding-right: 40px;
+}
+
+.company-logo{
+    margin: auto;
+}
+
+
+/**************Contact***********/
+
+#contact {
+    padding: 30px 0px;
+    width: 100%;
+    background-color: #47a447;
+}
+
+form {
+    padding: 20px 0px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.form-control {
+    border-style: none;
+    border-radius: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+#contact .btn {
+    z-index: 2;
+    background-color: red !important;
+}
 
 
 
