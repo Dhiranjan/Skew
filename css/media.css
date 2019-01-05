@@ -1,0 +1,160 @@
+/*-------Small Screen Device-----*/
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    /*Navigation*/
+    .navbar {
+        float: right !important;
+    }
+
+    .fa-bars{
+        color: #fff;
+    }
+    
+    .navbar-toggler{
+        outline: none !important;
+    }
+
+    /*Banner*/
+    #banner {
+        padding: 0px 0px 500px;
+    }
+
+    .banner-text {
+        top: 35%;
+        text-align: center;
+    }
+
+    /*About us*/
+
+    #about {
+        padding: 0px 0px 200px;
+        text-align: center;
+    }
+
+    #about h1::after {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    /*Services*/
+    #services h1::after {
+        width: 50%;
+    }
+
+    .btn{
+        opacity: 1;
+        margin-bottom: 12px;
+    }
+
+    .service-box i {
+        font-size: 5em;
+    }
+
+    /*Testimonials*/
+    #testimonials h1 {
+        border: none;
+        font-size: 35px;
+        text-align: center;
+    }
+    #testimonials .col-md-3{
+       
+        height: 350px;
+    }
+
+    #testimonials h1::after{
+        margin: auto;
+        width: 50%;
+    }
+
+    #testimonials .col-md-3:hover {
+        background-color: #fff;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .testimony-image {
+        left: 110px;
+    }
+
+
+    .testimony-body p {
+        text-align: justify;
+        padding: 70px 20px 5px;
+    }
+
+    .testimony-body p::before {
+        
+        top: 15px;
+        left: 0px;
+        font-size: 8em;
+    }
+    
+    .testimony-body p::after {
+     
+        font-size: 8em;
+        bottom: 20px;
+        right: 20px; 
+    }
+    
+    .social {
+        position: absolute;
+        top: 82%;
+        left: 10%;
+        opacity: 1;
+    }
+
+    /*Company*/
+    #company{
+        display: none;
+    }
+    
+    /*contact*/
+    #contact h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .form-group .btn.btn-primary {
+        margin-top: 100px !important;
+        width: 91%;
+    }
+
+}
+
+/*-------320px TO 480px -----*/
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  
+}
+
+/*-------480px TO 640px -----*/
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  
+}
+
+
+/*-------640px TO 768px -----*/
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  
+}
+
+
+/*-------768px TO 1024px -----*/
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+
+/*-------Greater than 1024px -----*/
+
+@media only screen and (min-width: 1025px) {
+  
+}
